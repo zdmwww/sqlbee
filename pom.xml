@@ -22,6 +22,7 @@
 		<beanutils.version>1.9.4</beanutils.version>
 		<commonslang3.version>3.11</commonslang3.version>
 	</properties>
+
 	<modules>
         <module>configurer</module>
 		<module>builder</module>
@@ -74,6 +75,21 @@
 			<version>${commonslang3.version}</version>
 		</dependency>
 	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>cmiot-nexus-wuxi</id>
+			<name>nexus</name>
+			<url>http://10.15.2.56:8081/repository/maven-releases/</url>
+		</repository>
+
+		<snapshotRepository>
+			<id>cmiot-nexus-wuxi</id>
+			<name>nexus</name>
+			<url>http://10.15.2.56:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<build>
 		<plugins>
 			<plugin>
